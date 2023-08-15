@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Baper Bank Demo</title>
+  </head>
+  <body class="bg-[#222f3e]">
+    <main>
+      <div class="min-h-screen">
+        <h1 class="text-white text-4xl font-bold text-center p-16">Welcome To <span class="text-[#ff9f43]">Baper Bank!!!</span></h1>
+        <div class="hero-content flex-col lg:flex-row-reverse gap-10">
+          <div class="text-center lg:text-left">
+            <h1 class="text-5xl text-white font-bold">Login now!</h1>
+            <p class="py-6 text-white">To Login Please Enter Your Email Address And Password !!!!!</p>
+          </div>
+          <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-[#341f97]">
+            <div class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-base text-white">Email</span>
+                </label>
+                <input type="email" name="" id="user-email" placeholder="enter email" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-base text-white">Password</span>
+                </label>
+                <input type="password" name="" id="user-password" placeholder="enter password" class="input input-bordered" required />
+              </div>
+              <div class="form-control mt-6">
+                <button id="btn-login" class="btn text-white hover:bg-[#341f97] bg-[#222f3e]">Login</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="./login.js"></script>
+    </main>
+  </body>
+</html>

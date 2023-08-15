@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank Counter</title>
+  </head>
+  <body class="text-white min-h-screen bg-[#222f3e]">
+    <header>
+      <h1 class="text-white text-4xl font-bold text-center p-10">বাপের ক্যাশ কাউন্টারে <span class="text-[#ff9f43]">আপনাকে স্বাগতম!!!</span></h1>
+    </header>
+    <main>
+      <section>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 w-9/12 mx-auto">
+          <div class="bg-[#10ac84] p-8 rounded-lg">
+            <h1 class="text-2xl font-medium">Deposit</h1>
+            <h2 class="text-4xl font-medium">$<span id="deposit-hub">00</span></h2>
+          </div>
+          <div class="bg-[#5f27cd] p-8 rounded-lg">
+            <h1 class="text-2xl font-medium">Withdraw</h1>
+            <h2 class="text-4xl font-medium">$<span id="total-withdraw">10</span></h2>
+          </div>
+          <div class="bg-[#ee5253] p-8 rounded-lg">
+            <h1 class="text-2xl font-medium">Balance</h1>
+            <h2 class="text-4xl font-medium">$<span id="total-balance">1235</span></h2>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 w-9/12 mx-auto mt-16">
+          <div class="bg-[#22a6b3] p-8 rounded-lg space-y-5">
+            <h1 class="text-2xl font-medium">Please Deposit</h1>
+            <input id="input-deposit" class="w-9/12 p-3 rounded-md text-black" type="text" placeholder="Please type amount" />
+            <button id="btn-deposit" class="btn block w-36 text-white hover:bg-[#22a6b3] bg-[#222f3e]">Deposit</button>
+          </div>
+          <div class="bg-[#8395a7] p-8 rounded-lg space-y-5">
+            <h1 class="text-2xl font-medium">Please Withdraw</h1>
+            <input id="input-withdraw" class="w-9/12 p-3 rounded-md text-black" type="text" placeholder="Please type amount" />
+            <button id="btn-withdraw" class="btn block w-36 text-white hover:bg-[#8395a7] bg-[#222f3e]">Withdraw</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./deposit.js"></script>
+    <script src="./withdraw.js"></script>
+  </body>
+</html>
